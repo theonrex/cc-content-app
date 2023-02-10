@@ -372,7 +372,7 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
 
 			/* Check if the network is the correct one */
 			if (network.chainId !== (Number(process.env.NEXT_PUBLIC_CHAIN_ID) || 0)) {
-				/* Switch network if the chain id doesn't correspond to Goerli Testnet Network */
+				/* Switch network if the chain id doesn't correspond to Binance Smart Chain(BSC) Testnet Network */
 				await provider.send("wallet_switchEthereumChain", [
 					{
 						chainId:
